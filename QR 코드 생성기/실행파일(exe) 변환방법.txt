@@ -1,0 +1,66 @@
+[.py를 .exe로 변환하는 방법]
+
+이 문서는 Python 파일(.py)을 Windows 실행파일(.exe)로 변환하는 기본 방법을 안내합니다.
+
+1. 준비 사항
+- 운영체제: Windows
+- Python 설치 완료
+- 변환할 파이썬 파일 준비 (예: qr2.py)
+
+2. PyInstaller 설치
+1) 터미널(명령 프롬프트 또는 PowerShell)을 엽니다.
+2) 아래 명령으로 PyInstaller를 설치합니다.
+   pip install pyinstaller
+
+3. .exe 변환 명령
+- 기본 명령:
+  pyinstaller --onefile 파일명.py
+
+- GUI 프로그램(콘솔창 없이 실행) 명령:
+  pyinstaller --onefile --windowed --name 원하는이름 파일명.py
+
+- 예시(현재 프로젝트 기준):
+  pyinstaller --onefile --windowed --name qr3 qr2.py
+
+4. 변환 후 생성되는 폴더/파일
+- dist 폴더: 최종 실행파일(.exe) 생성 위치
+- build 폴더: 빌드 중간 파일
+- 파일명.spec: 빌드 설정 파일
+
+예)
+- dist\qr3.exe
+- build\...
+- qr3.spec
+
+5. 실행 방법
+1) dist 폴더로 이동합니다.
+2) 생성된 exe 파일을 더블클릭하여 실행합니다.
+
+6. 자주 쓰는 옵션
+- --onefile: exe 1개 파일로 묶음
+- --windowed: GUI 앱 실행 시 콘솔창 숨김
+- --name 앱이름: 생성 exe 이름 지정
+- --icon 아이콘파일.ico: exe 아이콘 지정
+
+아이콘 포함 예시:
+pyinstaller --onefile --windowed --name qr3 --icon app.ico qr2.py
+
+7. 자주 발생하는 문제와 해결
+- pyinstaller 명령을 못 찾는 경우:
+  - pip install pyinstaller 다시 실행
+  - python -m PyInstaller ... 형태로 실행
+
+- 모듈 누락 오류가 나는 경우:
+  - 필요한 패키지를 먼저 설치 후 다시 빌드
+  - 예: pip install qrcode[pil]
+
+- 실행파일 용량이 큰 경우:
+  - onefile 방식 특성상 용량이 커질 수 있음 (정상)
+
+8. 배포 시 참고
+- exe는 빌드한 운영체제(Windows)에서 실행하는 것이 기본입니다.
+- 다른 PC에서 실행 시 보안 경고가 뜰 수 있습니다.
+- 배포 전 실제 대상 PC에서 실행 테스트를 권장합니다.
+
+9. 현재 프로젝트에서 실제 사용한 명령
+C:/Users/LG/AppData/Local/Programs/Python/Python314/python.exe -m PyInstaller --onefile --windowed --name qr3 qr2.py

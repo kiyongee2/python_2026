@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진 서버</title>
+    <style>
+        h1 {
+            color: #340bed;
+            margin: 20px;
+        }
+        img {
+            width: 200px;
+            margin: 5px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>사진 갤러리</h1>
+    {% for photo in photos %}
+        <img src="{{ url_for('static', filename='photos/' + photo) }}" >
+    {% endfor %}
+</body>
+</html>
