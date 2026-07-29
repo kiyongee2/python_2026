@@ -2,7 +2,7 @@
 # 좌석 번호 출력하기 - 4줄 4열
 for i in range(1, 5):
   for j in range(1, 5):
-    print(4 * (i - 1) + j, end=" ")
+    print(4*(i-1) + j, end=" ")
   print()
 print()
   

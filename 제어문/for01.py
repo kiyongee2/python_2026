@@ -1,10 +1,20 @@
+'''
+print(range(5))
+print(list(range(5)))
+print(list(range(1, 6)))
+print(list(range(0, 10, 2)))
 
-# 1부터 10까지의 짝수 출력
+for i in range(1, 6):
+    print(i, end=" ")
+'''
+
+# 1부터 10까지의 짝수 출력(if문 사용)
 for i in range(1, 11):
     if i % 2 == 0:
         print(i, end=" ")
 print()  # 줄바꿈
 
+# 1부터 10까지의 짝수 출력
 for i in range(2, 11, 2):
     print(i, end=" ")
 
@@ -63,3 +73,4 @@ for dan in range(2, 10):
         break
       print(f"{dan} x {i} = {dan * i}")
     print()  # 단이 끝날 때마다 줄바꿈
+'''

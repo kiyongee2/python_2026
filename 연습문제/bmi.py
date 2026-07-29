@@ -25,3 +25,6 @@ elif bmi >= 23 and bmi <= 24.9:
     print("과체중")
 else:
     print("비만")
+
+
+
