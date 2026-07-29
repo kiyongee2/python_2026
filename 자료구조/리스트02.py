@@ -48,3 +48,16 @@ print(x) # [1, 2, 3]
 print(y) # [4, 5, 6]
 print(x + y) # [1, 2, 3, 4, 5, 6]
 print(x * 2) # [1, 2, 3, 1, 2, 3]
+
+# 리스트의 내포
+squares = [x * x for x in range(1, 5)]
+print(squares)
+
+evens = [x for x in range(1, 11) if x % 2 == 0]
+print(evens)
+
+evens = []
+for x in range(1, 11):
+    if x % 2 == 0:
+        evens.append(x)  
+print(evens)
