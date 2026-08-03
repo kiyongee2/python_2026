@@ -34,7 +34,6 @@ print(f"1부터 {n}까지의 합: {total}")
 '''
 
 # 챗봇
-'''
 count = 0
 while True:
   msg = input("입력(종료=끝): ")
@@ -44,7 +43,6 @@ while True:
   count += 1
   # print(f"{count}:번 {msg}")
   # print(count, "번: ", msg)
-'''
   
 from datetime import datetime
 

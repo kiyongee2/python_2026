@@ -73,4 +73,3 @@ for dan in range(2, 10):
         break
       print(f"{dan} x {i} = {dan * i}")
     print()  # 단이 끝날 때마다 줄바꿈
-'''

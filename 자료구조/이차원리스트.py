@@ -1,5 +1,19 @@
 
 # 이차원 리스트 - 행과 열로 이루어진 리스트
+a = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+
+print(a[0])
+print(a[1])
+print(a[1][1])
+
+for row in a:
+    for x in row:
+        print(x, end=" ")
+    print()
+
 # 리스트 생성
 matrix = [
     [1, 2, 3],  #1행
