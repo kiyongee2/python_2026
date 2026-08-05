@@ -40,3 +40,21 @@ print(s2.strip()) #Hello, World!
 print(s2.lstrip()) #Hello, World!, 왼쪽 공백 제거
 print(s2.rstrip()) #   Hello, World!, 오른쪽 공백 제거
 
+s = "Python"
+print(s[0])       # P
+print(s[0:3])     # Pyt
+print(s[-1])      # n
+print(s[::2])     # Pto
+
+fruit = "banana,grape,kiwi"
+fruit_list = fruit.split(",") # 리스트로 분리
+print(fruit_list)     
+print(fruit_list[0])
+print(fruit_list[1])
+
+print("Hello".replace("l", "L")) # 문자 수정
+print("  hi  ".strip()) # 공백 제거
+
+info = "홍길동 / 010-1234-5678 / 서울"
+info_list = info.split(' / ')
+print(info_list)

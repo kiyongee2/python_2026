@@ -42,3 +42,17 @@ print("copy 후:", copied_numbers) #[9, 5, 5, 2, 1]
 copied_numbers.extend([11, 12])
 print("10, 11 추가후:", copied_numbers) # [9, 5, 5, 2, 1, 10, 11, 12]
 
+# append() 
+numbers = [10, 20, 30]
+# numbers.append(40, 50) # 2개 들어갈 수 없음 
+
+new_data = [40, 50]
+numbers.append(new_data)
+print(numbers)
+
+# extend()
+numbers = [10, 20, 30]
+new_data = [40, 50]
+
+numbers.extend(new_data)
+print(numbers)

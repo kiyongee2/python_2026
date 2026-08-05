@@ -1,5 +1,5 @@
 
-# 학생 성적표 프로그램
+# 학생 성적 관리
 student_list = [
     {"name": "이대한", "kor": 95, "eng": 80, "math": 80},
     {"name": "박민국", "kor": 80, "eng": 75, "math": 75},
@@ -16,3 +16,5 @@ for student in student_list:
     total = kor + eng + math
     average = total / (len(student) - 1)  # 과목 수로 나누어 평균 계산
     print(f"{name}\t{kor}\t{eng}\t{math}\t{total}\t{average:.2f}")
+    
+    
