@@ -42,7 +42,7 @@ print("요소의 최소값:", min_value) #10
 
 # 리스트의 연산
 x = [1, 2, 3]
-y = [4, 5, 6]
+y = [4, 5, 6, 10]
 
 print(x) # [1, 2, 3]
 print(y) # [4, 5, 6]
@@ -56,6 +56,7 @@ print(squares)
 evens = [x for x in range(1, 11) if x % 2 == 0]
 print(evens)
 
+# 1부터 10까지 중 짝수만 저장
 evens = []
 for x in range(1, 11):
     if x % 2 == 0:
