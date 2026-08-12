@@ -1,6 +1,7 @@
 
 import time
 
+'''
 print("현재 시간:", time.time()) #1775224469.4519815
 print("현재 시간 (로컬):", time.localtime())
 print(time.ctime()) #Fri Apr  3 22:54:29 2026
@@ -14,6 +15,7 @@ days = round(time.time() / (24 * 60 * 60), 2)
 years = round(days / 365, 2)
 print(f"현재까지 경과된 년수: {years}년")
 print(f"현재까지 경과된 일수: {days}일")
+'''
 
 # 시간 지연
 print("3초 후에 메시지가 출력됩니다...")

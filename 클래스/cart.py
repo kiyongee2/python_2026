@@ -18,8 +18,7 @@ class Cart:
     def get_items(self):
         return f"장바구니: {self.items}"
 
-# 장바구니 객체 생성
-cart = Cart()
+cart = Cart()  # 장바구니 객체 생성
 cart.add_item("사과")
 cart.add_item("바나나")
 print(cart.get_items())  # 장바구니: ['사과', '바나나']

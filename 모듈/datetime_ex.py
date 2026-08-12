@@ -17,8 +17,8 @@ today = date.today()
 print("오늘:", today)
 
 # 식목일
-the_day = date(2026, 4, 5)
-print("식목일:", the_day)
+the_day = date(2026, 8, 15)
+print("광복절:", the_day)
 
 # 날짜 차이 계산
 date_diff = the_day - today

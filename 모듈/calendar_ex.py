@@ -4,18 +4,17 @@ import calendar
 # 2026년 전체 달력 출력
 calendar.prcal(2026)
 
-# 2026년 3월 달력 출력
-calendar.prmonth(2026, 3)
+# 2026년 8월 달력 출력
+calendar.prmonth(2026, 8)
 
 # 요일 이름 출력
 print("요일 이름:", calendar.day_name[0])  # 월요일
 print("요일 이름:", calendar.day_name[6])  # 일요일
 
 print("요일 리스트:", calendar.day_name[:]) 
-print("요일 리스트:", list(calendar.day_name)) 
 
 # 특정 날짜의 요일 변환
-day_of_week = calendar.weekday(2026, 3, 28) 
+day_of_week = calendar.weekday(2026, 8, 15) 
 print(day_of_week)  # 5
 print(calendar.day_name[day_of_week])  # 토요일
 
