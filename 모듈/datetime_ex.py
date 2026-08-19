@@ -24,3 +24,14 @@ print("광복절:", the_day)
 date_diff = the_day - today
 print("D-day:", date_diff.days) #D-day: 7
 
+from datetime import datetime
+
+# 1. 오늘 날짜와 시간 가져오기
+now = datetime.now()
+
+# 2. strftime을 이용해 원하는 형식으로 변환하기
+# 참고: 요일 표시 기호(%A)는 운영체제(OS) 언어 설정에 따라 영문(Tuesday)으로 나올 수 있습니다.
+formatted_date = now.strftime("%Y년 %m월 %d일 (%A)")
+
+print(formatted_date)
+

@@ -1,9 +1,7 @@
-
 import random 
 import time
 
 word = ["python", "programming", "challenge", "developer", "algorithm"]
-
 
 n = 1
 
