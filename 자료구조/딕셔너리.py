@@ -59,3 +59,11 @@ print(fruit)
 print(fruit.get("banana"))
 # 2.
 print(fruit["banana"])
+
+# 예제
+dic = {}  #빈 딕셔너리
+dic[1] = 'a'
+dic[2] = 'b'
+dic[3] = 'c'
+
+print(dic) #{1: 'a', 2: 'b', 3: 'c'}
