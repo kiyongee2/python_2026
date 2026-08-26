@@ -21,6 +21,7 @@
     <h1>사진 갤러리</h1>
     {% for photo in photos %}
         <img src="{{ url_for('static', filename='photos/' + photo) }}" >
+        {# <p>{{ photo }}</p> #}
     {% endfor %}
 </body>
 </html>

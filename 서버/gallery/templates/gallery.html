@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>사진 서버 만들기</title>
+  <style>
+    h2{margin-left: 10px;}
+    img{
+      width: 200px; 
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>사진 갤러리</h2>
+  {% for photo in photos %}
+    <img src="{{ url_for('static', filename='photos/' + photo) }}">
+  {% endfor %}
+  
+  <h4>
+    <a href="{{ url_for('index') }}">홈으로 돌아가기</a>
+  </h4>
+</body>
+</html>

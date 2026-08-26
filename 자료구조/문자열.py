@@ -46,11 +46,32 @@ print(s[0:3])     # Pyt
 print(s[-1])      # n
 print(s[::2])     # Pto
 
+# split(구분기호) - 문자열을 리스트로 변환
 fruit = "banana,grape,kiwi"
 fruit_list = fruit.split(",") # 리스트로 분리
 print(fruit_list)     
 print(fruit_list[0])
 print(fruit_list[1])
+
+# replace() - 문자 수정(대체)
+msg = "hello, world"
+print(msg) # hello, world
+msg = msg.replace("world", "korea")
+print(msg) # hello, korea
+
+#공백제거 strip()
+greeting = " hi, jun "
+greeting = greeting.strip()
+print(greeting) #'hi, jun'
+
+# find() - 특정 문자의 시작 위치(인덱스) 찾기
+book = "AI python programming"
+print(book.find("python")) # 3
+print(book.find("java")) # -1
+if book.find("python") != -1:
+    print("python에 관련된 책이군요!")
+else:
+    print("python에 관련된 책이 아니군요!")
 
 print("Hello".replace("l", "L")) # 문자 수정
 print("  hi  ".strip()) # 공백 제거
@@ -58,3 +79,5 @@ print("  hi  ".strip()) # 공백 제거
 info = "홍길동 / 010-1234-5678 / 서울"
 info_list = info.split(' / ')
 print(info_list)
+
+
