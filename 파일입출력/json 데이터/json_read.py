@@ -1,4 +1,3 @@
-
 # json 파일 읽기
 import json
 import os
@@ -20,8 +19,6 @@ print("-" * 50)
 print(f"ID: {data[0]['id']}")
 print(f"Name: {data[0]['name']}")
 print(f"Price: {data[0]['price']}")
-print(f"Description: {data[0]['description']}")
-print(f"Image: {data[0]['image']}")
 
 print("\n제품 목록")
 print("-" * 50)
@@ -29,6 +26,4 @@ for product in data:
     print(f"ID: {product['id']}")
     print(f"Name: {product['name']}")
     print(f"Price: {product['price']}")
-    print(f"Description: {product['description']}")
-    print(f"Image: {product['image']}")
     print("-" * 50)
